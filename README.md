@@ -2,7 +2,7 @@
 
 ## Projeto de Automação de Testes
 
-Este projeto consiste em testes de automação utilizando Selenium WebDriver e Cucumber para verificar as funcionalidades de report de bug [mantis](https://mantis-prova.base2.com.br/
+Este projeto consiste em testes de automação utilizando Selenium WebDriver e Cucumber para verificar as funcionalidades de report de bug [mantis](https://mantis-prova.base2.com.br/)
 
 ### Pré-requisitos
 
@@ -53,7 +53,9 @@ Cada feature possui cenários de teste escritos em Gherkin, e os passos dos cen�
 
 Observação: Certifique-se de que o ChromeDriver está no PATH do sistema ou ajuste o caminho no código conforme necessário.
 
+
 # DÉBITO TÉCNICO
+Devido as questões de tempo e saúde, não pude atingir o nível de qualidade que pretendia demonstrar, mas os pontos de melhoria desse projeto são:
 
 - **Implementação de serialização;**
 - **Configurar o Allure Report para executar diretamente dentro do github**;
