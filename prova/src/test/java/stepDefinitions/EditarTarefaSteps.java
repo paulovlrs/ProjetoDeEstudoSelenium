@@ -12,7 +12,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
-public class EditarTarefaSteps extends WebDriverBase {
+public class EditarTarefaSteps {
 
     private WebDriver driver;
     private LoginPage loginPage;
@@ -69,7 +69,7 @@ public class EditarTarefaSteps extends WebDriverBase {
 
     @Before
     public void setUp() {
-        driver = inicializarDriver();
+        driver = WebDriverBase.inicializarDriver();
         loginPage = new LoginPage(driver);
         homePage = new HomePage(driver);
         criarTarefaPage = new CriarTarefaPage(driver);
@@ -77,6 +77,6 @@ public class EditarTarefaSteps extends WebDriverBase {
     }
     @After
     public void finalizar(){
-        fechaDriver();
+        WebDriverBase.fechaDriver();
     }
 }

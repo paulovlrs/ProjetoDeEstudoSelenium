@@ -12,13 +12,26 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
-public class CriarTarefaStep extends WebDriverBase {
+public class CriarTarefaStep {
 
     private WebDriver driver;
     private LoginPage loginPage;
     private HomePage homePage;
     private VerTarefaPage verTarefaPage;
     private CriarTarefaPage criarTarefaPage;
+
+    @Before
+    public void setUp() {
+        driver = WebDriverBase.inicializarDriver();
+        loginPage = new LoginPage(driver);
+        homePage = new HomePage(driver);
+        criarTarefaPage = new CriarTarefaPage(driver);
+        verTarefaPage = new VerTarefaPage(driver);
+    }
+    @After
+    public void finalizar(){
+        WebDriverBase.fechaDriver();
+    }
 
     @Given("que estou na tela principal")
     public void que_estou_na_tela_principal() {
@@ -57,18 +70,5 @@ public class CriarTarefaStep extends WebDriverBase {
         criarTarefaPage.visualizarMensagemDeSucesso();
         // Verifico se foi realmente salvo durante o redirecionamento da pagina (Para não ter o caso do falso positivo)
         verTarefaPage.verificarSeMensagemFoiSalva("Ao tentar salvar um documento no formato .docx");
-    }
-
-    @Before
-    public void setUp() {
-        driver = inicializarDriver();
-        loginPage = new LoginPage(driver);
-        homePage = new HomePage(driver);
-        criarTarefaPage = new CriarTarefaPage(driver);
-        verTarefaPage = new VerTarefaPage(driver);
-    }
-    @After
-    public void finalizar(){
-        fechaDriver();
     }
 }
