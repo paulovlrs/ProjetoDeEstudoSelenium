@@ -1,5 +1,6 @@
 package com.base2.page;
 
+import com.base2.Serialized.ElementosPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -7,10 +8,11 @@ import com.base2.utils.SeleniumUtils;
 
 public class HomePage {
     private SeleniumUtils seleniumUtils;
+    private ElementosPage elementosPage;
 
     public HomePage(WebDriver driver) {
         this.seleniumUtils = new SeleniumUtils(driver);
-        seleniumUtils.saveScreenshotPNG();
+        elementosPage = ElementosPage.fromJson();
     }
 
     public void expandirNaoAtribuidos(){
@@ -38,15 +40,15 @@ public class HomePage {
     }
 
     public void clicarCriarTarefa(){
-        seleniumUtils.clicar(By.cssSelector("[class='menu-icon fa fa-edit']"));
+        seleniumUtils.clicar(By.cssSelector(elementosPage.getHome().getCssSelectorClicarTarefa()));
         seleniumUtils.saveScreenshotPNG();
     }
 
     public void clicarVerTarefa(){
-        seleniumUtils.clicar(By.cssSelector("[class='menu-icon fa fa-list-alt']"));
+        seleniumUtils.clicar(By.cssSelector(elementosPage.getHome().getCssSelectorClicarVerTarefa()));
     }
 
     public void clicarMinhaVisao(){
-        seleniumUtils.clicar(By.cssSelector("[class='menu-icon fa fa-dashboard']"));
+        seleniumUtils.clicar(By.cssSelector(elementosPage.getHome().getCssSelectorClicarMinhaVisao()));
     }
 }

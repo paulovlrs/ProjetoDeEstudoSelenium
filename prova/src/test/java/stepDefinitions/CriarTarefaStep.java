@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import com.base2.Serialized.ElementosPage;
 import com.base2.base.WebDriverBase;
 import com.base2.page.CriarTarefaPage;
 import com.base2.page.HomePage;
@@ -19,6 +20,7 @@ public class CriarTarefaStep {
     private HomePage homePage;
     private VerTarefaPage verTarefaPage;
     private CriarTarefaPage criarTarefaPage;
+    private ElementosPage elementosPage;
 
     @Before
     public void setUp() {
@@ -27,6 +29,7 @@ public class CriarTarefaStep {
         homePage = new HomePage(driver);
         criarTarefaPage = new CriarTarefaPage(driver);
         verTarefaPage = new VerTarefaPage(driver);
+        elementosPage = ElementosPage.fromJson();
     }
     @After
     public void finalizar(){
@@ -35,9 +38,9 @@ public class CriarTarefaStep {
 
     @Given("que estou na tela principal")
     public void que_estou_na_tela_principal() {
-        loginPage.informarNomeDeUsuario("Paulo_VIctor");
+        loginPage.informarNomeDeUsuario(elementosPage.getLogin().getValorUsuario());
         loginPage.clicarBotaoEntrar();
-        loginPage.informarSenha("paulo15");
+        loginPage.informarSenha(elementosPage.getLogin().getValorSenha());
         loginPage.clicarBotaoEntrar();
     }
     @When("clicar em Criar Tarefa")

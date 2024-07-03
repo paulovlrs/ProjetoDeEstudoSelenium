@@ -1,0 +1,36 @@
+{
+  "CriarTarefa": {
+    "id_selecionar_categoria": "category_id",
+    "id_selecionar_frequencia": "reproducibility",
+    "id_selecionar_drodown_valor": "severity",
+    "cssSelector_botao_expasivel": "[class='fa fa-plus-square-o']",
+    "cssSelector_botao_reduzir": "[class='fa fa-minus-square-o']",
+    "id_resumo": "summary",
+    "id_descricao": "description",
+    "id_passos_para_reproduzir": "steps_to_reproduce",
+    "id_informacoes_adicionais": "additional_info",
+    "id_aplicar_marcadores": "tag_string",
+    "id_selecionar_marcadores_existente": "tag_select",
+    "xpath_selecionar_visibilidade_publico": "//label[contains(.,'público')]",
+    "xpath_selecionar_visibilidade_privado": "//label[contains(.,'privado')]",
+    "cssSelector_visualizar_mensagem_de_Sucesso" : "[class='alert alert-success center']"
+  },
+  "Home": {
+    "cssSelector_clicar_tarefa" : "[class='menu-icon fa fa-edit']",
+    "cssSelector_clicar_ver_tarefa" : "[class='menu-icon fa fa-list-alt']",
+    "cssSelector_clicar_minha_visao" : "[class='menu-icon fa fa-dashboard']"
+  },
+  "Login": {
+    "id_username": "username",
+    "id_password": "password",
+    "cssSelector_botao_entrar": "[value='Entrar']",
+    "valor_usuario": "Paulo_VIctor",
+    "valor_senha": "paulo15"
+  },
+  "VerTarefa" : {
+    "id_anotacao" : "bugnote_text",
+    "cssSelector_adicionar_anotacao": "[class='btn btn-primary btn-white btn-round']",
+    "cssSelector_salva_retorna_id_tarefa_gerada": "[class='bug-id']"
+  },
+  "local_path_arquivo": "src\\test\\resources\\attachments\\evidencia.png"
+}

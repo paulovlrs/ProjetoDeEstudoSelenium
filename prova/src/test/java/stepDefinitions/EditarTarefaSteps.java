@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import com.base2.Serialized.ElementosPage;
 import com.base2.base.WebDriverBase;
 import com.base2.page.CriarTarefaPage;
 import com.base2.page.HomePage;
@@ -19,12 +20,13 @@ public class EditarTarefaSteps {
     private HomePage homePage;
     private VerTarefaPage verTarefaPage;
     private CriarTarefaPage criarTarefaPage;
+    private ElementosPage elementosPage;
 
     @Given("que estou na tela de Ver Tarefa")
     public void que_estou_na_tela_de_ver_tarefa() {
-        loginPage.informarNomeDeUsuario("Paulo_VIctor");
+        loginPage.informarNomeDeUsuario(elementosPage.getLogin().getValorUsuario());
         loginPage.clicarBotaoEntrar();
-        loginPage.informarSenha("paulo15");
+        loginPage.informarSenha(elementosPage.getLogin().getValorSenha());
         loginPage.clicarBotaoEntrar();
 
         // Massa de dados
@@ -74,6 +76,7 @@ public class EditarTarefaSteps {
         homePage = new HomePage(driver);
         criarTarefaPage = new CriarTarefaPage(driver);
         verTarefaPage = new VerTarefaPage(driver);
+        elementosPage = ElementosPage.fromJson();
     }
     @After
     public void finalizar(){
