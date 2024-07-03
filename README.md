@@ -57,9 +57,7 @@ Observação: Certifique-se de que o ChromeDriver está no PATH do sistema ou aj
 # DÉBITO TÉCNICO
 Devido as questões de tempo e saúde, não pude atingir o nível de qualidade que pretendia demonstrar, mas os pontos de melhoria desse projeto são:
 
-- **Implementação de serialização;**
 - **Configurar o Allure Report para executar diretamente dentro do github**;
-- **Utilziar o Framework Lombook para redução de tamanho de código**;
 - **Definição de mais cenários para teste**;
 	- Exemplos: 
 		- Filtros de pesquisa;
