@@ -1,0 +1,11 @@
+com\base2\Serialized\ElementosPage$CriarTarefa.class
+com\base2\Serialized\ElementosPage.class
+com\base2\base\WebDriverBase.class
+com\base2\page\VerTarefaPage.class
+com\base2\page\LoginPage.class
+com\base2\Serialized\ElementosPage$VerTarefa.class
+com\base2\utils\SeleniumUtils.class
+com\base2\Serialized\ElementosPage$Login.class
+com\base2\page\HomePage.class
+com\base2\Serialized\ElementosPage$Home.class
+com\base2\page\CriarTarefaPage.class

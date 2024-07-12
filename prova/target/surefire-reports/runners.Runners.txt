@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: runners.Runners
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 60.43 s <<< FAILURE! -- in runners.Runners
+EditarTarefa.Adicionar Comentário na tarefa -- Time elapsed: 34.51 s <<< FAILURE!
+java.lang.AssertionError: 
+Elemento nÃ£o encontrado dentro do tempo esperado: By.xpath: //td[@class='bugnote-note bugnote-public' and contains(.,'Bug acontece todo santo dia')], erro: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[@class='bugnote-note bugnote-public' and contains(.,'Bug acontece todo santo dia')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.0', revision: '15400459dd*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\paulo\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55217/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 21c17cca349b5d0f7ecd4520df937af2
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.base2.utils.SeleniumUtils.esperarElementoVisivel(SeleniumUtils.java:30)
+	at com.base2.page.VerTarefaPage.verificarComentarioExiste(VerTarefaPage.java:57)
+	at stepDefinitions.EditarTarefaSteps.a_tarefa_salva_a_anotacao(EditarTarefaSteps.java:69)
+	at ✽.a tarefa salva a anotacao "Bug acontece todo santo dia"(file:///C:/Users/paulo/OneDrive/Automation/ProvaBaseDois/prova/src/test/resources/features/EditarTarefa.feature:9)
+
