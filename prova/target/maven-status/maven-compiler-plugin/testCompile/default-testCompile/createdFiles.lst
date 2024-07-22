@@ -1,3 +1,3 @@
-stepDefinitions\CriarTarefaStep.class
-stepDefinitions\EditarTarefaSteps.class
+stepDefinitions\PesquisaSteps.class
+stepDefinitions\LerObraSteps.class
 runners\Runners.class

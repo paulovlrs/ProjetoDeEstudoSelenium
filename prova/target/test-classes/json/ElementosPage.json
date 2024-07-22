@@ -1,36 +1,33 @@
 {
-  "CriarTarefa": {
-    "id_selecionar_categoria": "category_id",
-    "id_selecionar_frequencia": "reproducibility",
-    "id_selecionar_drodown_valor": "severity",
-    "cssSelector_botao_expasivel": "[class='fa fa-plus-square-o']",
-    "cssSelector_botao_reduzir": "[class='fa fa-minus-square-o']",
-    "id_resumo": "summary",
-    "id_descricao": "description",
-    "id_passos_para_reproduzir": "steps_to_reproduce",
-    "id_informacoes_adicionais": "additional_info",
-    "id_aplicar_marcadores": "tag_string",
-    "id_selecionar_marcadores_existente": "tag_select",
-    "xpath_selecionar_visibilidade_publico": "//label[contains(.,'público')]",
-    "xpath_selecionar_visibilidade_privado": "//label[contains(.,'privado')]",
-    "cssSelector_visualizar_mensagem_de_Sucesso" : "[class='alert alert-success center']"
-  },
   "Home": {
-    "cssSelector_clicar_tarefa" : "[class='menu-icon fa fa-edit']",
-    "cssSelector_clicar_ver_tarefa" : "[class='menu-icon fa fa-list-alt']",
-    "cssSelector_clicar_minha_visao" : "[class='menu-icon fa fa-dashboard']"
+    "xpath_botao_login": "//button[contains(.,'Login')]",
+    "cssSelector_botao_pesquisar_mangas": "[aria-label='Pesquisar por mangás']"
   },
   "Login": {
-    "id_username": "username",
+    "id_username": "name",
     "id_password": "password",
-    "cssSelector_botao_entrar": "[value='Entrar']",
-    "valor_usuario": "Paulo_VIctor",
-    "valor_senha": "paulo15"
+    "cssSelector_botao_entrar": "button[type='submit']",
+    "valor_usuario": "1o1bd7i56m",
+    "valor_senha": "1o1bd7i56m",
+    "cssSelector_modal_login": "div[class='flex items-center justify-center h-screen']"
   },
-  "VerTarefa" : {
-    "id_anotacao" : "bugnote_text",
-    "cssSelector_adicionar_anotacao": "[class='btn btn-primary btn-white btn-round']",
-    "cssSelector_salva_retorna_id_tarefa_gerada": "[class='bug-id']"
+  "Pesquisar": {
+    "cssSelector_campo_pesquisa": "input",
+    "xpath_botao_pesquisar": "//button[contains(.,'Pesquisar')]",
+    "valor_pesquisa_titulo-1": "O rei dos cavaleiros que Retorna com um Deus",
+    "valor_pesquisa_titulo-2": "Astral Pet Store",
+    "valor_pesquisa_titulo-3": "O Prodígio Cavaleiro Negro em Condição Terminal"
   },
-  "local_path_arquivo": "src\\test\\resources\\attachments\\evidencia.png"
+  "Obra": {
+    "cssSelector_div_informacao_obra" : "div[class='flex w-full']",
+    "cssSelector_div_capitulos": "div[class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4']",
+    "cssSelector_iniciar_leitura": "div.flex.flex-1.flex-col.justify-end a",
+    "url_astral-pet-store": "https://slimeread.com/manga/12451/astral-pet-store",
+    "url_o-rei-dos-cavaleiros-que-retorna-com-um-deus": "https://slimeread.com/manga/12756/o-rei-dos-cavaleiros-que-retorna-com-um-deus",
+    "url_o-prodigio-cavaleiro-negro-em-condicao-terminal": "https://slimeread.com/manga/10710/o-prodigio-cavaleiro-negro-em-condicao-terminal",
+    "xpath_Capitulo_Atual": "/html/body/div/div/div/main/div[2]/div[1]/div[2]/div[1]/div/div/div[1]/button"
+  },
+  "CaminhoDeDiretorios": {
+    "local_path_arquivo": "src\\test\\resources\\attachments\\evidencia.png"
+  }
 }

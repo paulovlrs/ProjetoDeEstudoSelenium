@@ -27,6 +27,13 @@ Certifique-se de ter o seguinte instalado em sua máquina:
     ```bash
     scoop install allure
     ```
+	
+
+3. Executando os testes:
+
+    ```bash
+    mvn clean test
+    ```
 
 ## Gerando e Visualizando Relatórios
 

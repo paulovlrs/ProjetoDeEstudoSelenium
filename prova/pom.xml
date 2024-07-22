@@ -79,6 +79,24 @@
             <artifactId>webdrivermanager</artifactId>
             <version>5.8.0</version>
         </dependency>
+        <!-- ignorar mensagem -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+
+        <!-- Resolver Antibot -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vaadin.external.google</groupId>
+            <artifactId>android-json</artifactId>
+            <version>0.0.20131108.vaadin1</version>
+        </dependency>
     </dependencies>
 
     <build>

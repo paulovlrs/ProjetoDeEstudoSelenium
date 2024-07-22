@@ -1,18 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: runners.Runners
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 60.43 s <<< FAILURE! -- in runners.Runners
-EditarTarefa.Adicionar Comentário na tarefa -- Time elapsed: 34.51 s <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 86.06 s <<< FAILURE! -- in runners.Runners
+Pesquisar.Pesquisar o manga "O rei dos cavaleiros que Retorna com um Deus" -- Time elapsed: 71.93 s <<< FAILURE!
 java.lang.AssertionError: 
-Elemento nÃ£o encontrado dentro do tempo esperado: By.xpath: //td[@class='bugnote-note bugnote-public' and contains(.,'Bug acontece todo santo dia')], erro: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[@class='bugnote-note bugnote-public' and contains(.,'Bug acontece todo santo dia')] (tried for 10 second(s) with 500 milliseconds interval)
+Elemento nÃ£o encontrado dentro do tempo esperado: By.cssSelector: [aria-label='Pesquisar por mangÃ¡s'], erro: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: [aria-label='Pesquisar por mangÃ¡s'] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.16.0', revision: '15400459dd*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\paulo\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55217/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 21c17cca349b5d0f7ecd4520df937af2
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\paulo\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58091}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58091/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 75237d9019cb2279c9e79fe48e1ff4de
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.base2.utils.SeleniumUtils.esperarElementoVisivel(SeleniumUtils.java:30)
-	at com.base2.page.VerTarefaPage.verificarComentarioExiste(VerTarefaPage.java:57)
-	at stepDefinitions.EditarTarefaSteps.a_tarefa_salva_a_anotacao(EditarTarefaSteps.java:69)
-	at ✽.a tarefa salva a anotacao "Bug acontece todo santo dia"(file:///C:/Users/paulo/OneDrive/Automation/ProvaBaseDois/prova/src/test/resources/features/EditarTarefa.feature:9)
+	at com.utils.SeleniumUtils.mensagemDeFalhaStep(SeleniumUtils.java:137)
+	at com.utils.SeleniumUtils.esperarElementoVisivel(SeleniumUtils.java:44)
+	at com.utils.SeleniumUtils.clicar(SeleniumUtils.java:104)
+	at com.page.HomePage.clicarBotaoPesquisa(HomePage.java:28)
+	at stepDefinitions.PesquisaSteps.pesquisar_o_nome_do_manhwa_ou_manga(PesquisaSteps.java:42)
+	at ✽.Pesquisar o nome do Manhwa ou manga(file:///C:/Users/paulo/OneDrive/Automation/ProvaBaseDois/prova/src/test/resources/features/Pesquisar.feature:5)
 
